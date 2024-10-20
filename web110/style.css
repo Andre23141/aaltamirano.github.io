@@ -2,13 +2,16 @@ body{
   background-color: red;
   text-align: centered;
   color: black;
+  font-size: 16;
 }
 
 h1 {
   backgroung-color: blue;
-  
+  color: black;
+  border-style: dotted;
 }
 
 p {
-  
+  background-color: green;
+  color: black;
 }
