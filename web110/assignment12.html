@@ -5,10 +5,46 @@
 </head>
 
 <body>
+  <h1 id="myH"></h1>
+  <p id="datetime"></p>
+  <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+</canvas>
+  <canvas id="myCanvas1" width="200" height="100" style="border:1px solid #d3d3d3;">
+</canvas>
   <p>
 
-  
-
+dsd
+    
   </p>
+  <script>
+    
+    // Name using id
+    document.getElementById("myH").innerHTML = "Andre Altamirano";
+    // Current date and time code
+    function updateDateTime() {
+      const now = new Date();
+      const currentDateTime = now.toLocaleString();
+      document.querySelector('#datetime').textContent = currentDateTime;
+    }
+    setInterval(updateDateTime, 1000);
+    // Canvas text
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+    ctx.font = "30px Arial";
+    ctx.fillText("Andre Altamirano",10,50);
+    // Canvas imagery
+    var c = document.getElementById("myCanvas1");
+    var ctx = c.getContext("2d");
+    ctx.beginPath();
+    ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+    ctx.stroke();
+
+    var c = document.getElementById("myCanvas1");
+    var ctx = c.getContext("2d");
+    ctx.moveTo(0, 0);
+    ctx.lineTo(200, 100);
+    ctx.stroke();
+    
+  </script>
 </body>
 </html>
