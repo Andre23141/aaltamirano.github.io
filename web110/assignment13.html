@@ -8,16 +8,39 @@
   <h1>Assignment 13</h1>
   <p>
     <ul>
+      <li>SELECT statements assignments</li>
       <li>SELECT * FROM Customers;</li>
       <li>SELECT CustomerID, CustomerName FROM Customers;</li>
       <li>SELECT CustomerName, Address, City, PostalCode FROM Customers WHERE 'UK';</li>
       <li>SELECT ContactName, CustomerName FROM Customers ORDER BY ContactName ASC;</li>
       <li>SELECT COUNT(*) AS TotalCustomers FROM Customers;</li>
       <li>SELECT COUNTRY, COUNT(*) AS CustomerCount FROM Customers GROUP BY Country;</li>
-      <li></li>
+      <li>SELECT Country, COUNT(*) AS CustomerCount FROM Customers GROUP BY Country ORDER BY CustomerCount DESC, Country ASC;</li>
+      <li>SELECT Country, COUNT(*) AS CustomerCount FROM Customers GROUP BY Country HAVING COUNT(*) > 10 ORDER BY CustomerCount DESC, Country ASC;</li>
     </ul>
+  <ul>
+    <li>INSERT, UPDATE, and DELETE statements assignments</li>
+    <li>INSERT INTO Shippers (ShipperID, ShipperName, Phone) VALUES (4, 'On Time Delivery', '(503) 555 0123');</li>
+    <li>UPDATE Products SET Price = Price + 1;</li>
+    <li>UPDATE Products SET Price = Price - 1;</li>
+    <li>UPDATE Shippers SET ShipperName = 'On Time Delivery' WHERE ShipperName = 'On Time Delivery';</li>
+    <li>DELETE FROM Shippers WHERE ShipperName = 'On-Time Delivery';</li>
+  </ul>
   </p>
+In this chapter, we looked into databases and SQL, the programming language that manages them. We read the concepts and then did the assignments that were presented to us to understand how SQL works and how it is 
+  useful for manipulating, sorting, and querying databases. 
+For starters, a database is defined as an organized collection of data and a collection of schemas, tables, queries, reports, views, and other elements. The important aspect of any database is the DBMS, which stands 
+  for "database management system" mainly because of the importance of being a computer/software application that interacts with end-users, other applications, and the database itself to capture and analyze data. 
+  This is the system used to manipulate database data. And since people need to be able to manipulate the data in it, it was logical for it to have a dedicated programming language, hence the existence of SQL. 
+SQL (Structured Query Language) is a special-purpose programming language designed for managing the data inside databases, held in a relational database management system, or for stream processing in a relational 
+  data stream management system. It has its syntax and layout which adds its data manipulation language as well as other clauses. Some of these statements can be divided into the following:
+- Data Manipulation Language statements (DML): These are the group of commands that directly manipulate the data in the database, and their commands include INSERT, UPDATE, and DELETE.
+- The SQL SELECT statements: These are responsible for returns of several result sets of records from one or more tables in the database. These are used to filter from which records you want to get your data to work 
+  on.
+- WHERE clause statements: WHERE, in SQL, specifies that a SQL  DML statement should only affect rows that meet specified criteria, and leave the rest unaffected. 
 
+In summary, what I learned from the activities presented in this chapter is the use of SQL in order to obtain data, work on that data, manipulate the data, and be able to delete that same data, all directly from the 
+  database without the need for another programming language or similar.
   <p>
 
   
