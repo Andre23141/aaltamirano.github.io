@@ -1,0 +1,25 @@
+body {
+    background-color: white;
+  }
+  
+  h1 {
+    background-color: lightblue;
+    color: black;
+    text-align: center;
+    border-style: dotted;
+    font-size: 72px;
+  }
+  
+  p {
+    background-color: rgba(2, 68, 167, 0.87);
+    color: white;
+    font-size: 24px;
+  }
+
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    width: 50%;
+  }

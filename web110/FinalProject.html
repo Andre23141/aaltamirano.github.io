@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <link rel="stylesheet" href="FinalProject.css">
+</head>
+
+<body>
+    <h1 id="myH" ></h1>
+    <h1>Final project...</h1>
+
+  <p id="datetime" style="background-color:rgb(0, 191, 255); text-align: center; color:rgb(255, 255, 255)"></p>
+  <canvas id="myCanvas" width="300" height="100" style="border:1px solid #000000;">
+</canvas>
+  <canvas id="myCanvas1" width="200" height="100" style="border:1px solid #ee0101;">
+</canvas>
+<! -- This is a comment in the code, not visible in the webpage -->
+  <p>
+    In 2019, Team Liquid's CS:GO roster was a formidable lineup that made a significant impact in the competitive 
+    scene. The team was known for its exceptional synergy and skill, which led them to achieve remarkable success, 
+    including winning the Intel Grand Slam. The roster featured key players such as NAF, who was celebrated for his 
+    sharp aim and versatility, and Twistzz, known for his explosive plays and clutch potential. Additionally, EliGE 
+    was a standout performer, consistently delivering high-impact rounds. The team was led by Stewie2K, who brought 
+    a dynamic leadership style and aggressive playstyle, while TACO contributed with his experience and support role. 
+    This combination of talent and teamwork allowed Team Liquid to dominate many tournaments throughout the year, 
+    solidifying their status as one of the top teams in the world.
+  </p>
+  <img src="TeamLiquid2019.png" alt="Team Liquid 2019, raster">
+  <p>
+    As of 2024, Team Liquid's CS2 roster features a mix of established talent and promising new players, aiming to 
+    reclaim their position at the top of the competitive scene. Here’s a breakdown of the current roster:
+    ultimate (Roland Tomkowiak) - A promising new addition from Poland, ultimate joined the team in July 2024.
+    jks (Justin Savage) - The versatile Australian player, also part of the roster since July 2024.
+    MithR (Torbjørn Nyborg) - A key strategic player, contributing significantly to the team's tactical decisions.
+    Twistzz (Russel Van Dulken) - A returning star known for his exceptional skills and clutch performances.
+    NAF (Keith Markovic) - A veteran player recognized for his consistent performance and versatility.
+    Yekindar (Mareks Gaļinskis) - Another strong addition, known for his aggressive playstyle and impact in matches.
+  </p>
+  
+  <img src="TeamLiquid2024.svg" alt="Team Liquid 2024, vector">
+
+<p>Audio</p>
+  <audio controls>
+    <source src="https://cdn.freesound.org/previews/761/761671_14312064-lq.mp3" type="audio/mpeg">
+  </audio>
+
+<p>Video</p>
+  <video width="320" height="240" controls>
+  <source src="https://videos.pexels.com/video-files/6548176/6548176-hd_1920_1080_24fps.mp4" type="video/mp4"> 
+  </video>
+
+  <script>
+    
+    // Name using javascript
+    document.getElementById("myH").innerHTML = "Andre Altamirano";
+
+    // Current date and time code
+    function updateDateTime() {
+      const now = new Date();
+      const currentDateTime = now.toLocaleString();
+      document.querySelector('#datetime').textContent = currentDateTime;
+    }
+    setInterval(updateDateTime, 1000);
+
+    // Canvas text
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+    ctx.font = "30px Arial";
+    ctx.fillText("Andre Altamirano",10,50);
+
+    // Canvas imagery
+    var c = document.getElementById("myCanvas1");
+    var ctx = c.getContext("2d");
+    ctx.beginPath();
+    ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+    ctx.stroke();
+    var c = document.getElementById("myCanvas1");
+    var ctx = c.getContext("2d");
+    ctx.moveTo(0, 0);
+    ctx.lineTo(200, 100);
+    ctx.stroke();
+    
+  </script>
+</body>
+</html>
